@@ -8,35 +8,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,400;0,600;1,300&display=swap"
           rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/qweather-icons@1.6.0/font/qweather-icons.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/49792c7b1d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<h1>Weather app</h1>
-<i class="fa-solid fa-magnifying-glass-location"></i>
 <main class="weather">
     <section class="weather__one">
         <div class="weather__one_city">
             <h1></h1>
+            <h2></h2>
         </div>
-        <div class="weather__one_icon"></div>
-        <div class="weather__one_temperature">
-            <div class="weather__one_temperature--temperature"></div>
-        </div>
+        <div class="weather__one_icon"><i class=""></i></div>
+        <div class="weather__one_temperature"></div>
     </section>
     <section class="weather__two">
         <div class="weather__two_search">
             <input type="text" placeholder="Search location here...">
             <button>
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-magnifying-glass-location"></i>
             </button>
         </div>
+        <div class="warning"></div>
         <div class="weather__two_features">
             <h2>Today's Highlights</h2>
-            <div class="weather__two_features--wind"></div>
-            <div class="weather__two_features--humidity"></div>
+            <div class="weather__two_features--wind">
+                <h3>Wind Speed</h3>
+                <p></p>
+            </div>
+            <div class="weather__two_features--humidity">
+                <h3>Humidity</h3>
+                <p></p>
+            </div>
         </div>
     </section>
 </main>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="/js/main.js"></script>
 </body>
 </html>
