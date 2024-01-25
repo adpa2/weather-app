@@ -15,8 +15,8 @@ let city;
 let statusWeather = weather.textContent;
 
 const apiLink = "https://api.openweathermap.org/data/2.5/weather?q=";
-const apiKey = "&appid=4738ea4f96e4b93ab0f5eb3cbbafe0f5";
-const units = "&units=metric";
+const apiKey = "&appid=4738ea4f96e4b93ab0f5eb3cbbafe0f5&units=metric";
+const units = "";
 const warning =document.querySelector(".warning")
 
 const getData = () => {
